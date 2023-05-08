@@ -46,7 +46,7 @@ class Plugin:
 	    diastolic = heartratedata[0]['diastolic']
             pulse = heartratedata[0]['pulse']
             headers = {
-                'User-Agent': 'RaspberryPi/MBP70.py',
+                'User-Agent': 'RaspberryPi/Bw300.py',
                 'Content-Type': 'application/x-www-form-urlencoded'
             }
             form_data = {'rfid': rfid, 'pin': pin, 'one': systolic, 'two': diastolic, 'three': pulse}
