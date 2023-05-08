@@ -16,7 +16,7 @@ class Plugin:
         return
 
     def execute(self, config, heartratedata):
-        # self.temperaturedata = temperaturedata
+        # self.heartratedata = heartratedata
         # --- part of plugin skeleton
         log = logging.getLogger(__name__)
         log.info('Starting plugin: ' + __name__)
