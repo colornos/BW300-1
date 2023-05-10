@@ -42,8 +42,8 @@ class Plugin:
             print("No card detected!")
 
         else:
-	    systolic = heartratedata[0]['systolic']
-	    diastolic = heartratedata[0]['diastolic']
+            systolic = heartratedata[0]['systolic']
+            diastolic = heartratedata[0]['diastolic']
             pulse = heartratedata[0]['pulse']
             headers = {
                 'User-Agent': 'RaspberryPi/Bw300.py',
