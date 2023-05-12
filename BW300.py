@@ -175,9 +175,9 @@ while True:
             if heartratedata:
                 # Sort scale output by timestamp to retrieve most recent three results
                 heartratedatasorted = sorted(heartratedata, key=lambda k: k['timestamp'], reverse=True)
-                    
+
                 # Run all plugins found
                 for plugin in plugins.values():
-                        plugin.execute(config, heartratedatasorted)
-                else:
-                    log.error('Unreliable data received. Unable to process')
+                    plugin.execute(config, heartratedatasorted)
+            else:
+                log.error('Unreliable data received. Unable to process')
